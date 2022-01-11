@@ -12,6 +12,10 @@ interface IProps {
   divide: () => void;
   multiply: () => void;
   equals: () => void;
+  sqrt: () => void;
+  power: () => void;
+  factorial: () => void;
+
 }
 
 const ButtonSection: FC<IProps> = ({
@@ -22,10 +26,48 @@ const ButtonSection: FC<IProps> = ({
   minus,
   divide,
   multiply,
-  equals
+  equals,
+  sqrt,
+  power,
+  factorial
 }) => {
   return (
     <div className="grid grid-cols-4 grid-rows-5 gap-2 w-full">
+      <button
+        className=" text-3xl w-full bg-blue-400 rounded-xl hover:bg-blue-200"
+        onClick={() => {
+          inputAdd("3.141592")
+        }}
+      >
+        π 
+      </button>
+      <button
+        className=" text-3xl w-full bg-blue-400 rounded-xl hover:bg-blue-200"
+        onClick={() => {
+          sqrt()
+        }}
+      >
+        √
+      </button>
+
+      <button
+        className=" text-3xl w-full bg-blue-400 rounded-xl hover:bg-blue-200"
+        onClick={() => {
+          power()
+        }}
+      >
+        ^
+      </button>
+
+      <button
+        className=" text-3xl w-full bg-blue-400 rounded-xl hover:bg-blue-200"
+        onClick={() => {
+          factorial()
+        }}
+      >
+        !
+      </button>
+
       <button
         className=" text-3xl w-full bg-green-400 col-span-2 rounded-xl hover:bg-green-200"
         onClick={() => {
