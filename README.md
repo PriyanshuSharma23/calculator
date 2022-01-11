@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Calculator
+A very simple calculator but with modern looking UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technologies used:
+1) React
+2) Tailwindcss
 
 ## Available Scripts
 
